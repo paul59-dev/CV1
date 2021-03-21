@@ -1,0 +1,635 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    height: 100vh;
+    background: #f1f1f1;
+}
+
+header {
+    width: 100%;
+    min-width: 100%;
+    height: 100%;
+    background: url(../img/bg_header.svg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.nav-links {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links {
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.links a {
+    font-size: 40px;
+    color: #f1f1f1;
+}
+.links a:hover {
+    color:rgb(78, 76, 221);
+    transition: 0.5s;
+}
+
+.content {
+    position: relative;
+}
+
+.content h1 {
+    position: relative;
+    right: 6px;
+    padding: 200px 0 0 5vw;
+    color: #f1f1f1;
+    font-size: 100px;
+}
+
+.content p {
+    position: relative;
+    padding-left: 5vw;
+    color: #f1f1f1;
+    font-size: 25px;
+}
+
+.pp {
+    width: 27%;
+    min-width: 10%;
+    position: absolute;
+    top: 100px;
+    right: 12%;
+}
+
+.container-corner {
+    display: none;
+}
+
+.content-menu {
+    display: none;
+}
+
+.know {
+    width: 100%;
+    margin-top: 50px;
+    margin: 20px 0;
+}
+
+.global-know {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.know .container-know {
+    width: 100%;
+    margin: 0 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content-know h2 {
+    font-size: 80px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+}
+
+.content-know p {
+    font-size: 20px;
+    color: rgb(15, 14, 14);
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+
+.img-know img {
+    width: 250px;
+}
+
+#knowledges h2,
+#hobbies h2 {
+    font-size: 80px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    width: 100%;
+    padding: 50px 0 0 40px;
+}
+
+.container-knowledges {
+    margin: 20px 0;
+}
+
+.container-knowledges h3 {
+    font-size: 50px;
+}
+
+.first-row,
+.second-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.first-column,
+.second-column {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content-progress {
+    padding: 20px;
+}
+
+.content-progress p {
+    font-size: 40px;
+    margin: 0;
+}
+
+.box {
+    border: 2px solid black;
+    width: 500px;
+}
+
+.progress-bar {
+    height: 20px;
+    background-color: rgb(78, 76, 221);
+}
+.progress-bar.progress-anim {
+    width: 1%;
+}
+
+.html {width: 80%;}
+.css {width: 60%;}
+.js {width: 55%;}
+.react {width: 30%;}
+.bootstrap {width: 45%;}
+.materialize {width: 50%;}
+.vsCode {width: 90%;}
+.git {width: 70%;}
+.github {width: 75%;}
+
+.container-hobbies {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.position-column-1,
+.position-column-2 {
+    display: flex;
+}
+
+.item {
+    position: relative;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    padding: 30px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.item i {
+    font-size: 50px;
+}
+
+.item .item-text {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.item:hover .item-text {
+    visibility: visible;
+}
+
+footer {
+    width: 100%;
+    height: 500px;
+    background: url(../img/Vector\ 5.svg);
+    background-size: cover;
+    position: relative;
+}
+
+.container-footer {
+    width: 100%;
+    position: absolute;
+    top: 300px;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container-footer p {
+    color: #f1f1f1;
+    font-size: 32px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.social-network h3 {
+    font-size: 50px;
+    color:rgb(241, 182, 55);
+    text-align: center;
+    padding: 20px 0;
+}
+
+.social-network a {
+    text-decoration: none;
+    color: #f1f1f1;
+}
+
+.social-network i {
+    font-size: 50px;
+    margin: 0 20px;
+}
+.social-network i:hover {
+    color:rgb(78, 76, 221);
+    transition: 0.7s;
+}
+
+@media screen and (max-width: 1100px) {
+    .content h1 {
+        text-align: center;
+        padding: 400px 0 0 0;
+    }
+
+    .subtitle {
+        text-align: center;
+    }
+
+    .pp {
+        top: 600px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .content-progress {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .box {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .links a {
+        font-size: 25px;
+    }
+
+    .content h1 {
+        text-align: center;
+        padding: 100px 0 0 0;
+    }
+    
+    .content p {
+        text-align: center;
+        padding-left: 0px;
+    }
+
+    .pp {
+        display: none;
+    }
+
+    .know .container-know {
+        flex-direction: column;
+    }
+
+    .content-know {
+        text-align: center;
+    }
+
+    .content-know p {
+        margin: 40px 0;
+    }
+
+    .img-know {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #knowledges h2 {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .first-row {
+        flex-direction: column;
+    }
+
+    #hobbies h2 {
+        text-align: center;
+        font-size: 50px;
+    }
+
+    .container-footer {
+        top: 200px;
+        flex-direction: column-reverse;
+        position: absolute;
+    }
+
+    .container-footer p {
+        padding-top: 100px; 
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        display: none;
+    }
+
+    .content h1 {
+        padding-top: 200px;
+    }
+
+    .container-corner {
+        display: block;
+        position: absolute;
+        right: 40px;
+        top: 40px;
+    }
+
+    .btn-circle {
+        background: rgb(78, 76, 221);
+        display: block;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        position: relative;
+        z-index: 15;
+        outline: none;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: 2px solid #fff;
+    }
+
+    .line {
+        width: 50%;
+        height: 2px;
+        background: #fff;
+        transition: 
+                    transform 0.2s ease,
+                    opacity 0.2s ease,
+                    top 0.2s ease 0.2s;
+        position: relative;
+    }
+    
+    .line:nth-child(1) {
+        top: -10px;
+    }
+    .line:nth-child(3) {
+        top: 10px;
+    }
+    
+    .btn-circle.menu-anim .line:nth-child(1) {
+        top: 2px;
+        transform: rotate(45deg);
+        transition: 
+                    top 0.2s ease,
+                    transform 0.2s ease 0.2s;
+    }
+    
+    .btn-circle.menu-anim .line:nth-child(2) {
+        opacity: 0;
+        transition: opacity 0.2s ease;
+    }
+    
+    .btn-circle.menu-anim .line:nth-child(3) {
+        top: -2px;
+        transform: rotate(-45deg);
+        transition: 
+                    top 0.2s ease,
+                    transform 0.2s ease 0.2s;
+    }
+
+    .content-menu {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: #1c1738;
+        color: white;
+        position: absolute;
+        transform: translateY(-100%);
+        z-index: 14;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .content-menu a {
+        font-size: 30px;
+        margin-bottom: 30px;
+        color: #f1f1f1;
+    }
+
+    .content-menu a:hover {
+        color: rgb(78, 76, 221);
+    }
+
+    .content-menu.menu-links-anim {
+        transform: translateY(0);
+        transition: transform 0.5s ease 0.2s;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .content h1 {
+        padding-top: 200px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .content h1 {
+        padding-top: 200px;
+    }
+
+    .content-know h2 {
+        font-size: 60px;
+    }
+
+    .content-know p {
+        text-align: left;
+    }
+
+    #knowledges {
+        height: 50%;
+    }
+
+    #knowledges h2 {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container-knowledges {
+        margin: 0;
+    }
+
+    .first-column {
+        margin: 0;
+    }
+
+    .first-column h3 {
+        visibility: hidden;
+    }
+
+    .second-column,
+    .second-row {
+        display: none;
+    }
+
+    #hobbies {
+        margin-top: 100px;
+    }
+
+    #hobbies h2 {
+        text-align: center;
+        padding: 100px 0 0 0;
+    }
+
+    .container-hobbies {
+        margin: 50px 0;
+    }
+
+    .position-column-1,
+    .position-column-2 {
+        flex-direction: column;
+    }
+
+    footer {
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    #hobbies {
+        margin-top: 200px;
+    }
+
+    footer {
+        height: 600px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .content h1 {
+        padding: 300px 0 0 0;
+        text-align: center;
+        font-size: 70px;
+    }
+
+    .content p {
+        font-size: 20px;
+    }
+
+    .pp {
+        width: 30%;
+    }
+    
+    .content p {
+        padding-left: 0;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .res-content {
+        visibility: visible;
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .content h1 {
+        padding-top: 250px;
+    }
+
+    #hobbies {
+        margin-top: 200px;
+    }
+
+    footer {
+        height: 600px;
+    }
+
+    .container-footer {
+        top: 250px;
+        flex-direction: column-reverse;
+        position: absolute;
+    }
+
+    .container-footer p {
+        padding-top: 100px; 
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .content h1 {
+        padding-top: 200px;
+    }
+
+    #knowledges h2 {
+        font-size: 40px;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+}
