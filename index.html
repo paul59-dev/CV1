@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <title>CV - Paul Abbée</title>
+    <title>CV - Paul Allebée</title>
 
     <!-- STYLE -->
     <link rel="stylesheet" href="./src/css/style.css">
@@ -20,12 +20,13 @@
 </head>
 
 <body>
-    <header>
+    <header id='header'>
         <nav>
             <ul class='nav-links'>
-                <li class='links'><a class="text-decoration-none" href="#">Accueil</a></li>
-                <li class='links'><a class="text-decoration-none" href="#">Me connaître</a></li>
-                <li class='links'><a class="text-decoration-none" href="#">Me contacter</a></li>
+                <li class='links'><a class="text-decoration-none" href="#header">Accueil</a></li>
+                <li class='links'><a class="text-decoration-none" href="#know">Me connaître</a></li>
+                <li class='links'><a class="text-decoration-none" href="#knowledges">Mes compétences</a></li>
+                <li class='links'><a class="text-decoration-none" href="#footer">Me Contacter</a></li>
             </ul>
         </nav>
         <div class="container-corner">
@@ -36,18 +37,19 @@
             </div>
         </div>
         <div class="content-menu">
-            <a class="text-decoration-none" href='#'>Accueil</a>
-            <a class="text-decoration-none" href='#'>Me connaître</a>
-            <a class="text-decoration-none" href='#'>Me contacter</a>
+            <a class="text-decoration-none" href='#header'>Accueil</a>
+            <a class="text-decoration-none" href='#know'>Me connaître</a>
+            <a class="text-decoration-none" href='#knowledges'>Me contacter</a>
+            <a class="text-decoration-none" href="#footer">Me Contacter</a>
         </div>
         <div class="content">
             <h1 class='name'>Paul Allebée</h1>
-            <p class='subtitle'>Code, Vigueur et Curiosité font de ma passion un métier.</p>
+            <p class='subtitle'>Motivé, Curieux et Passionné font de ma passion, un métier.</p>
             <img class='pp' src='./src/img/laptop.svg' />
         </div> 
     </header>
 
-    <section class='know'>
+    <section class='know' id='know'>
         <div class='global-know'>
             <div class='container-know'>
                 <div class='content-know'>
@@ -55,10 +57,10 @@
                     <p>
                         Bonjour, je m'appelle Paul Allebée.<br/>
                         Je suis étudiant en Terminal STI2D.<br/>
-                        Passionée et curieux dans le domaine de l'informatique.<br/>
-                        Je me suis lancé dans le developpement Web afin de découvrir beaucoups de technologie.<br/>
-                        J'apprend sans me forcé et j'essaye d'être au maximum pour aider ou travailler en équipe.<br/>
-                        Quand on me donne un projet je travaile au maximum dessus même si je n'ai pas les connaîssances requis. 
+                        Passionné par le monde de l'informatique<br/>
+                        Je me suis lancé dans le developpement Web en autoditacte afin de découvrir ce qu'il se cachait derrière un site web ou une application.<br/>
+                        J'apprend facilement et aime travailler en equipe.<br/>
+                        Je suis déterminé, lorsque j'aii un projet en tête, je le réalise jusqu'au bout même si je n'ai pas les connaissances. 
                     </p>
                 </div>
                 <div class='img-know'>
@@ -167,7 +169,7 @@
         </div>
     </section>
 
-    <footer>
+    <footer id='footer'>
         <div class='container-footer'>
             <p>Paul Allebée &copy;2021</p>
             <div class='social-network'>
@@ -190,6 +192,15 @@
 
     <!-- JAVASCRIPT -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js" integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ==" crossorigin="anonymous"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/8.3.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="/__/firebase/8.3.1/firebase-analytics.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
     <script src='./src/js/script.js'></script>
 </body>
 
